@@ -49,7 +49,8 @@ ARG AIRFLOW_VERSION="2.7.1"
 ARG PYTHON_BASE_IMAGE="python:3.8-slim-bullseye"
 
 ARG AIRFLOW_PIP_VERSION=23.2.1
-ARG AIRFLOW_IMAGE_REPOSITORY="https://github.com/apache/airflow"
+#ARG AIRFLOW_IMAGE_REPOSITORY="https://github.com/apache/airflow"
+ARG AIRFLOW_IMAGE_REPOSITORY="https://github.com/goutamkgp/airflow_custom_auth"
 ARG AIRFLOW_IMAGE_README_URL="https://raw.githubusercontent.com/apache/airflow/main/docs/docker-stack/README.md"
 
 # By default latest released version of airflow is installed (when empty) but this value can be overridden
