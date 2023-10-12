@@ -49,7 +49,7 @@ def init_xframe_protection(app):
 
 def init_api_experimental_auth(app):
     """Loads authentication backends."""
-    auth_backends = "airflow.api.auth.backend.default"
+    auth_backends = "airflow.api.auth.backend.custom_auth"
     try:
         auth_backends = conf.get("api", "auth_backends")
     except AirflowConfigException:
